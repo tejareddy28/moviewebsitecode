@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tollywood Tickets</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; }
+    .header { background:#222; color:#fff; padding:20px; text-align:center; }
+    .movie-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap:20px; padding:20px; }
+    .movie-card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .movie-card img { width:100%; height:auto; }
+    .movie-card .details { padding:10px; }
+    .movie-card button { margin-top:10px; padding:10px 15px; background:#e91e63; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+    .movie-detail { max-width:800px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; }
+    .seat-map { margin:20px 0; text-align:center; }
+    .buyout-box { background:#ffeb3b; padding:15px; border-radius:8px; margin:20px 0; text-align:center; }
+    .checkout { max-width:600px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Tollywood Tickets</h1>
+    <p>Your gateway to Tollywood screenings & private shows</p>
+  </div>
+
+  <section class="featured">
+    <!-- Carousel placeholder -->
+    <div class="movie-card">
+      <img src="poster1.jpg" alt="Featured Movie">
+      <div class="details">
+        <h2>Featured Movie Title</h2>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="now-playing">
+    <h2 style="padding-left:20px;">Now Playing</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="poster2.jpg" alt="Movie 2">
+        <div class="details">
+          <h3>Movie 2</h3>
+          <button>Showtimes</button>
+        </div>
+      </div>
+      <div class="movie-card">
+        <img src="poster3.jpg" alt="Movie 3">
+        <div class="details">
+          <h3>Movie 3</h3>
+          <button>Showtimes</button>
+        </div>
+      </div>
+      <!-- More movie cards -->
+    </div>
+  </section>
+
+  <!-- Movie Detail Page Example -->
+  <section class="movie-detail">
+    <img src="poster2.jpg" alt="Movie 2 Poster" style="width:100%; height:auto; border-radius:8px;">
+    <h2>Movie 2</h2>
+    <p><strong>Genre:</strong> Action, Drama <br> <strong>Cast:</strong> Actor A, Actor B</p>
+    <p>Synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper...</p>
+    
+    <h3>Showtimes in Hyderabad</h3>
+    <button>Select Seats</button>
+    <button class="buyout-box">Private Screening / Full Theatre Hire — ₹10,000</button>
+  </section>
+
+  <!-- Checkout stub -->
+  <section class="checkout">
+    <h3>Order Summary</h3>
+    <p>Movie: Movie 2 <br> Showtime: 7:30 PM <br> Seats: Premium x2</p>
+    <p>Extras: Popcorn Combo</p>
+    <p><strong>Total: ₹600</strong></p>
+    <button style="padding:10px 15px; background:#4caf50; color:#fff; border:none; border-radius:4px;">Proceed to Payment</button>
+  </section>
+
+</body>
+</html>
